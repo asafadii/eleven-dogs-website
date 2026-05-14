@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Check } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Árak | Eleven Dogs",
+  title: "Árak",
   description: "Kutyasétáltatás, napközi és ottalvás árak Budapesten, a 11. kerületben.",
 }
 

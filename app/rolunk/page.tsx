@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { CTASection } from "@/components/sections/cta"
 
 export const metadata: Metadata = {
-  title: "Rólunk | Eleven Dogs",
+  title: "Rólunk",
   description: "Ismerd meg Elizát és Alicját, az Eleven Dogs alapítóit, és kutyáikat, Buddyt és Pixie-t.",
 }
 

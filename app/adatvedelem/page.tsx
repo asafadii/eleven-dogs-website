@@ -3,7 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Adatvédelmi tájékoztató | Eleven Dogs",
+  title: "Adatvédelmi tájékoztató",
   description: "Az Eleven Dogs adatvédelmi tájékoztatója.",
 }
 
