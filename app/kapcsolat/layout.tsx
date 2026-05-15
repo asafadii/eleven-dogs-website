@@ -2,7 +2,9 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Kapcsolat",
-  description: "Vedd fel velünk a kapcsolatot! Kutyasétáltatás foglalás Budapesten, a 11. kerületben.",
+  description:
+    "Lépj kapcsolatba az Eleven Dogs csapatával: kutyasétáltatás, időpont és kérdések Újbudán, emailben vagy üzenetben.",
+  alternates: { canonical: "/kapcsolat" },
 }
 
 export default function ContactLayout({

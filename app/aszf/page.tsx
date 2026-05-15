@@ -4,16 +4,17 @@ import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Általános Szerződési Feltételek",
-  description: "Az Eleven Dogs általános szerződési feltételei.",
+  description: "Az Eleven Dogs általános szerződési feltételei a szolgáltatások igénybevételéről.",
+  alternates: { canonical: "/aszf" },
 }
 
 export default function TermsPage() {
   return (
     <>
       <Navigation />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         <section className="py-24 lg:py-32 bg-background">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-foreground mb-8">
                 Általános Szerződési Feltételek

@@ -25,8 +25,7 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await new Promise((resolve) => setTimeout(resolve, 1000))
     setSubmitted(true)
     setIsSubmitting(false)
   }
@@ -34,15 +33,14 @@ export default function ContactPage() {
   return (
     <>
       <Navigation />
-      <main className="pt-20">
-        {/* Hero Section */}
+      <main id="main-content" className="pt-20">
         <section className="py-24 lg:py-32 bg-secondary/30">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-3xl">
               <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                 Kapcsolat
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
                 Beszéljünk a kutyádról
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
@@ -52,9 +50,8 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Contact Content */}
         <section className="py-24 lg:py-32 bg-background">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
               {/* Contact Form */}
               <div>
@@ -65,7 +62,7 @@ export default function ContactPage() {
                 {submitted ? (
                   <div className="bg-primary/10 rounded-2xl p-8 text-center">
                     <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
-                      <Mail className="w-8 h-8 text-primary" />
+                      <Mail className="w-8 h-8 text-primary" aria-hidden />
                     </div>
                     <h3 className="text-xl font-semibold text-foreground mb-2">
                       Köszönjük az üzeneted!
@@ -150,10 +147,10 @@ export default function ContactPage() {
                     <Button 
                       type="submit" 
                       disabled={!formData.gdprConsent || isSubmitting}
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full h-14 text-base font-medium"
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full min-h-14 h-14 text-base font-medium"
                     >
                       {isSubmitting ? "Küldés..." : "Üzenet küldése"}
-                      <ArrowRight className="ml-2 w-5 h-5" />
+                      <ArrowRight className="ml-2 w-5 h-5 shrink-0" aria-hidden />
                     </Button>
                   </form>
                 )}
@@ -165,7 +162,7 @@ export default function ContactPage() {
                 <div className="bg-primary/10 rounded-2xl p-8">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
-                      <Calendar className="w-6 h-6 text-primary" />
+                      <Calendar className="w-6 h-6 text-primary" aria-hidden />
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-foreground">
@@ -191,7 +188,7 @@ export default function ContactPage() {
                     className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors"
                   >
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <Mail className="w-5 h-5 text-primary" />
+                      <Mail className="w-5 h-5 text-primary" aria-hidden />
                     </div>
                     <div>
                       <p className="font-medium text-foreground">Email</p>
@@ -201,7 +198,7 @@ export default function ContactPage() {
 
                   <div className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-primary" />
+                      <MapPin className="w-5 h-5 text-primary" aria-hidden />
                     </div>
                     <div>
                       <p className="font-medium text-foreground">Terület</p>
@@ -211,7 +208,7 @@ export default function ContactPage() {
 
                   <div className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <Clock className="w-5 h-5 text-primary" />
+                      <Clock className="w-5 h-5 text-primary" aria-hidden />
                     </div>
                     <div>
                       <p className="font-medium text-foreground">Nyitvatartás</p>
@@ -232,7 +229,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 px-5 py-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
                     >
-                      <Instagram className="w-5 h-5 text-primary" />
+                      <Instagram className="w-5 h-5 text-primary" aria-hidden />
                       <span className="font-medium text-foreground">Instagram</span>
                     </a>
                     <a 
@@ -241,7 +238,7 @@ export default function ContactPage() {
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 px-5 py-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
                     >
-                      <Facebook className="w-5 h-5 text-primary" />
+                      <Facebook className="w-5 h-5 text-primary" aria-hidden />
                       <span className="font-medium text-foreground">Facebook</span>
                     </a>
                   </div>

@@ -7,7 +7,9 @@ import { ArrowRight, Check } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Árak",
-  description: "Kutyasétáltatás, napközi és ottalvás árak Budapesten, a 11. kerületben.",
+  description:
+    "Kutyasétáltatás, napközi és ottalvás árak Újbudán, Budapest 11. kerületében. Átlátható csomagok és bérletek.",
+  alternates: { canonical: "/arak" },
 }
 
 const walkingPrices = [
@@ -69,15 +71,15 @@ export default function PricingPage() {
   return (
     <>
       <Navigation />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         {/* Hero Section */}
         <section className="py-24 lg:py-32 bg-secondary/30">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-3xl">
               <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                 Árak
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
                 Átlátható, fair árazás
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
@@ -89,7 +91,7 @@ export default function PricingPage() {
 
         {/* Walking Prices - Featured */}
         <section className="py-24 lg:py-32 bg-background">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
                 Fő szolgáltatásunk
@@ -132,7 +134,7 @@ export default function PricingPage() {
                   <ul className="space-y-3 mb-8">
                     {item.features.map((feature) => (
                       <li key={feature} className="flex items-center gap-3">
-                        <Check className={`w-5 h-5 ${item.popular ? 'text-primary' : 'text-primary'}`} />
+                        <Check className={`w-5 h-5 shrink-0 ${item.popular ? 'text-primary' : 'text-primary'}`} aria-hidden />
                         <span className={item.popular ? 'text-background/90' : 'text-muted-foreground'}>
                           {feature}
                         </span>
@@ -141,7 +143,7 @@ export default function PricingPage() {
                   </ul>
                   <Button 
                     asChild 
-                    className={`w-full rounded-full h-12 ${
+                    className={`w-full rounded-full min-h-14 h-14 text-base ${
                       item.popular 
                         ? 'bg-primary hover:bg-primary/90 text-primary-foreground' 
                         : 'bg-foreground hover:bg-foreground/90 text-background'
@@ -149,7 +151,7 @@ export default function PricingPage() {
                   >
                     <Link href="/kapcsolat">
                       Foglalj időpontot
-                      <ArrowRight className="ml-2 w-4 h-4" />
+                      <ArrowRight className="ml-2 w-4 h-4 shrink-0" aria-hidden />
                     </Link>
                   </Button>
                 </div>
@@ -183,7 +185,7 @@ export default function PricingPage() {
 
         {/* Other Services */}
         <section className="py-24 lg:py-32 bg-secondary/30">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="mb-16">
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-4">
                 További szolgáltatások
@@ -213,7 +215,7 @@ export default function PricingPage() {
                   <ul className="space-y-2">
                     {service.features.map((feature) => (
                       <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Check className="w-4 h-4 text-primary" />
+                        <Check className="w-4 h-4 text-primary shrink-0" aria-hidden />
                         {feature}
                       </li>
                     ))}
@@ -226,7 +228,7 @@ export default function PricingPage() {
 
         {/* CTA */}
         <section className="py-24 lg:py-32 bg-background">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6">
                 Kérdésed van az árakról?
@@ -237,11 +239,11 @@ export default function PricingPage() {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 h-14"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 min-h-14 h-14 text-base"
               >
                 <Link href="/kapcsolat">
                   Vedd fel velünk a kapcsolatot
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <ArrowRight className="ml-2 w-5 h-5 shrink-0" aria-hidden />
                 </Link>
               </Button>
             </div>

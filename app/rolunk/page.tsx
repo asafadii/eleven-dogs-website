@@ -6,7 +6,9 @@ import { CTASection } from "@/components/sections/cta"
 
 export const metadata: Metadata = {
   title: "Rólunk",
-  description: "Ismerd meg Elizát és Alicját, az Eleven Dogs alapítóit, és kutyáikat, Buddyt és Pixie-t.",
+  description:
+    "Ismerd meg az Eleven Dogs alapítóit, Elizát és Alicját, és kutyáikat, Buddyt és Pixie-t. Kutyasétáltatás Újbudán.",
+  alternates: { canonical: "/rolunk" },
 }
 
 const teamMembers = [
@@ -43,15 +45,15 @@ export default function AboutPage() {
   return (
     <>
       <Navigation />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         {/* Hero Section */}
         <section className="py-24 lg:py-32 bg-secondary/30">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-3xl">
               <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                 Rólunk
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
                 Két kutyás ember, egy közös álom
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
@@ -64,14 +66,15 @@ export default function AboutPage() {
 
         {/* Story Section */}
         <section className="py-24 lg:py-32 bg-background">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="relative">
-                <div className="aspect-[4/5] rounded-3xl overflow-hidden">
+                <div className="aspect-[4/5] rounded-3xl overflow-hidden relative bg-muted">
                   <Image
                     src="/images/about-story.jpg"
-                    alt="Eliza és Alicja kutyasétáltatás közben"
+                    alt="Az Eleven Dogs alapítói kutyasétáltatás közben"
                     fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                   />
                 </div>
@@ -110,7 +113,7 @@ export default function AboutPage() {
 
         {/* Team Section */}
         <section className="py-24 lg:py-32 bg-secondary/30">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                 A csapat
@@ -127,8 +130,9 @@ export default function AboutPage() {
                   <div className="aspect-[4/5] relative">
                     <Image
                       src={member.image}
-                      alt={member.name}
+                      alt={`${member.name}, ${member.role} – Eleven Dogs`}
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </div>
@@ -152,8 +156,9 @@ export default function AboutPage() {
                   <div className="aspect-[4/3] relative">
                     <Image
                       src={dog.image}
-                      alt={dog.name}
+                      alt={`${dog.name}, ${dog.role} – Eleven Dogs csapat`}
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </div>
@@ -174,7 +179,7 @@ export default function AboutPage() {
 
         {/* Values Section */}
         <section className="py-24 lg:py-32 bg-background">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-8">
                 Amiben hiszünk

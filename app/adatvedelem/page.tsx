@@ -4,16 +4,18 @@ import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Adatvédelmi tájékoztató",
-  description: "Az Eleven Dogs adatvédelmi tájékoztatója.",
+  description:
+    "Az Eleven Dogs adatvédelmi tájékoztatója: hogyan kezeljük a kapcsolatfelvétel során megadott adatokat.",
+  alternates: { canonical: "/adatvedelem" },
 }
 
 export default function PrivacyPage() {
   return (
     <>
       <Navigation />
-      <main className="pt-20">
+      <main id="main-content" className="pt-20">
         <section className="py-24 lg:py-32 bg-background">
-          <div className="container mx-auto px-6 lg:px-12">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-foreground mb-8">
                 Adatvédelmi tájékoztató
