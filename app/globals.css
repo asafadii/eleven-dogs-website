@@ -76,9 +76,9 @@
 }
 
 @theme inline {
-  --font-sans: 'Manrope', system-ui, sans-serif;
-  --font-mono: 'DM Sans', system-ui, sans-serif;
-  --font-display: 'DM Sans', system-ui, sans-serif;
+  --font-sans: var(--font-manrope), 'Manrope', system-ui, sans-serif;
+  --font-display: var(--font-fredoka), 'Fredoka', system-ui, sans-serif;
+  --font-button: var(--font-nunito), 'Nunito', system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -123,6 +123,17 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+  [data-slot='button'] {
+    font-family: var(--font-button);
   }
 }
 

@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: "Eliza",
     role: "Alapító & Kutyasétáltató",
-    image: "/images/team-eliza.jpg",
+    image: "/images/eliza.jpg",
     description: "A kutyák iránti szenvedélyem már gyerekkorom óta tart. Buddy, a mentett terrierem volt az, aki végleg elkötelezetté tett ezen a pályán. Minden nap hálás vagyok, hogy ezt csinálhatom."
   },
   {
@@ -30,13 +30,13 @@ const dogs = [
   {
     name: "Buddy",
     role: "Hivatalos inspiráció",
-    image: "/images/dog-buddy.jpg",
+    image: "/images/buddy.jpg",
     description: "Buddy egy energia-bomba terrier, aki minden nap megmutatja, milyen az igazi életöröm. Ő volt az ihlet az Eleven Dogs mögött."
   },
   {
     name: "Pixie",
     role: "Napközis társaság",
-    image: "/images/dog-pixie.jpg",
+    image: "/images/pixie.jpg",
     description: "Pixie a nyugalom szigete a csapatban. Kedves természete miatt tökéletes társaság a napközis kutyáknak."
   }
 ]
@@ -97,13 +97,15 @@ export default function AboutPage() {
                     másokkal is megosztani.
                   </p>
                   <p>
-                    Az Eleven Dogs a 11. kerületben indult, ahol mindketten lakunk. 
-                    A szomszédság kutyáival kezdtük, és ma már Újbuda egyik legismertebb 
-                    kutyasétáltató szolgáltatása vagyunk.
+                    Az Eleven Dogs egy személyes, helyi kutyasétáltató szolgáltatásként indult
+                    Újbudán. Kezdettől az volt a célunk, hogy megbízható, nyugodt és emberközeli
+                    segítséget adjunk azoknak a gazdiknak, akik szeretnék jó kezekben tudni a
+                    kutyájukat a rohanós hétköznapokban.
                   </p>
                   <p className="text-foreground font-medium">
-                    De a lényeg nem változott: minden kutya, akit sétáltatunk, ugyanazt a 
-                    szeretetet és figyelmet kapja, mint a sajátunk.
+                    Számunkra ez nem csak munka, a mindennapjaink is a kutyák körül forognak.
+                    Hosszú távú bizalmi kapcsolatokat építünk, odafigyeléssel, rugalmassággal és
+                    valódi törődéssel.
                   </p>
                 </div>
               </div>

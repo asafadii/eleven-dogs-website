@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 const trustStats = [
-  { value: "100+", label: "Boldog kutya" },
+  { value: "40+", label: "Boldog kutya" },
   { value: "5+", label: "Év tapasztalat" },
   { value: "4.9", label: "Értékelés" },
 ]
@@ -47,7 +47,7 @@ export function HeroSection() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 text-base font-medium min-h-12 h-12 sm:h-14 sm:min-h-14 border-border hover:bg-secondary"
+                className="rounded-full px-8 text-base font-medium min-h-12 h-12 sm:h-14 sm:min-h-14 border-border text-foreground hover:bg-foreground hover:text-background hover:border-foreground"
               >
                 <Link href="/rolunk">Ismerj meg minket</Link>
               </Button>
@@ -77,8 +77,8 @@ export function HeroSection() {
           <div className="relative min-w-0 w-full max-w-lg mx-auto lg:max-w-none lg:mx-0">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl bg-muted">
               <Image
-                src="/images/hero-dog.jpg"
-                alt="Vidám kutya séta közben, Eleven Dogs kutyasétáltatás Budapesten"
+                src="/images/buddy-pixie-home.jpg"
+                alt="Buddy és Pixie, az Eleven Dogs csapat kutyái"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"
                 className="object-cover"

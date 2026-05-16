@@ -14,7 +14,7 @@ export function Footer() {
               <span className="text-xl font-semibold tracking-tight">Eleven Dogs</span>
             </div>
             <p className="text-muted-foreground max-w-sm leading-relaxed">
-              Megbízható kutyasétáltatás és gondozás a 11. kerületben.
+              Megbízható kutyasétáltatás a 11. kerületben.
               Mert a kutyád megérdemli a legjobbat.
             </p>
             <div className="flex gap-3 mt-6">

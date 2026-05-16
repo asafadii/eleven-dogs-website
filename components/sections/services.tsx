@@ -21,7 +21,7 @@ export function ServicesSection() {
             <div className="grid lg:grid-cols-2 min-w-0">
               <div className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[320px]">
                 <Image
-                  src="/images/dog-walking.jpg"
+                  src="/images/seta-3.jpg"
                   alt="Kutyasétáltatás közben a szabadban, Eleven Dogs"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -104,7 +104,7 @@ export function ServicesSection() {
           <div className="rounded-2xl bg-card border border-border p-6 sm:p-8 hover:shadow-md transition-shadow min-w-0">
             <div className="relative aspect-[16/10] rounded-xl overflow-hidden mb-6 bg-muted">
               <Image
-                src="/images/dog-daycare.jpg"
+                src="/images/napkozi-1.jpg"
                 alt="Kutya napközi, gondozás és társaság"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -128,7 +128,7 @@ export function ServicesSection() {
           <div className="rounded-2xl bg-card border border-border p-6 sm:p-8 hover:shadow-md transition-shadow min-w-0">
             <div className="relative aspect-[16/10] rounded-xl overflow-hidden mb-6 bg-muted">
               <Image
-                src="/images/dog-overnight.jpg"
+                src="/images/napkozi-2.jpg"
                 alt="Kutya ottalvás, nyugodt környezet"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

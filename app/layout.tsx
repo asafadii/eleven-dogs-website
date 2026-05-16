@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { DM_Sans, Manrope } from 'next/font/google'
+import { Fredoka, Manrope, Nunito } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 
 import { LocalBusinessJsonLd } from '@/components/structured-data'
@@ -13,9 +13,15 @@ const manrope = Manrope({
   display: 'swap',
 })
 
-const dmSans = DM_Sans({
+const fredoka = Fredoka({
   subsets: ['latin'],
-  variable: '--font-dm-sans',
+  variable: '--font-fredoka',
+  display: 'swap',
+})
+
+const nunito = Nunito({
+  subsets: ['latin'],
+  variable: '--font-nunito',
   display: 'swap',
 })
 
@@ -92,7 +98,7 @@ export default function RootLayout({
   return (
     <html lang="hu" className="bg-background overflow-x-clip">
       <body
-        className={`${manrope.variable} ${dmSans.variable} font-sans antialiased min-w-0 overflow-x-clip`}
+        className={`${manrope.variable} ${fredoka.variable} ${nunito.variable} font-sans antialiased min-w-0 overflow-x-clip`}
       >
         <a
           href="#main-content"

@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -24,10 +25,15 @@ export function Navigation() {
             className="flex items-center gap-2 sm:gap-3 group min-w-0 shrink"
             aria-label="Eleven Dogs kezdőlap"
           >
-            <div className="w-10 h-10 shrink-0 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-lg font-bold text-primary-foreground">11</span>
-            </div>
-            <span className="text-lg sm:text-xl font-semibold tracking-tight text-foreground truncate">
+            <Image
+              src="/images/eleven-dogs-logo.png"
+              alt=""
+              width={120}
+              height={40}
+              className="h-9 sm:h-10 w-auto shrink-0"
+              priority
+            />
+            <span className="text-lg sm:text-xl font-semibold tracking-tight text-foreground truncate hidden sm:inline">
               Eleven Dogs
             </span>
           </Link>
