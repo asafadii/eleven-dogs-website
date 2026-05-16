@@ -53,7 +53,7 @@ export default function AboutPage() {
               <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                 Rólunk
               </p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
+              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
                 Két kutyás ember, egy közös álom
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
@@ -82,7 +82,7 @@ export default function AboutPage() {
               </div>
               
               <div>
-                <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6">
+                <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6">
                   Így kezdődött minden
                 </h2>
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -120,7 +120,7 @@ export default function AboutPage() {
               <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                 A csapat
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground">
                 Ismerd meg az Eleven Dogs csapatát
               </h2>
             </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                     />
                   </div>
                   <div className="p-8">
-                    <h3 className="text-2xl font-semibold text-foreground mb-1">
+                    <h3 className="font-display text-2xl font-semibold text-foreground mb-1">
                       {member.name}
                     </h3>
                     <p className="text-primary font-medium mb-4">{member.role}</p>
@@ -165,7 +165,7 @@ export default function AboutPage() {
                     />
                   </div>
                   <div className="p-8">
-                    <h3 className="text-2xl font-semibold text-foreground mb-1">
+                    <h3 className="font-display text-2xl font-semibold text-foreground mb-1">
                       {dog.name}
                     </h3>
                     <p className="text-accent font-medium mb-4">{dog.role}</p>
@@ -183,7 +183,7 @@ export default function AboutPage() {
         <section className="py-24 lg:py-32 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-8">
+              <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-8">
                 Amiben hiszünk
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">

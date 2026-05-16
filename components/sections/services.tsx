@@ -11,7 +11,7 @@ export function ServicesSection() {
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
             Szolgáltatásaink
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground leading-tight text-balance">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground leading-tight text-balance">
             Minden, amire kutyádnak szüksége van
           </h2>
         </div>
@@ -35,7 +35,7 @@ export function ServicesSection() {
                   Fő szolgáltatásunk
                 </div>
 
-                <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
+                <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-4">
                   Kutyasétáltatás
                 </h3>
 
@@ -111,7 +111,7 @@ export function ServicesSection() {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">Napközi</h3>
+            <h3 className="font-display text-xl font-semibold text-foreground mb-3">Napközi</h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Ha egész napos felügyeletre van szükség, nálunk biztonságban és szeretetben
               töltheti a napját a kutyád. Játék, pihenés és társaság.
@@ -135,7 +135,7 @@ export function ServicesSection() {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">Ottalvás</h3>
+            <h3 className="font-display text-xl font-semibold text-foreground mb-3">Ottalvás</h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
               Utazás vagy hosszabb távollét esetén otthonos környezetben vigyázunk
               a kutyádra, mintha a sajátunk lenne.

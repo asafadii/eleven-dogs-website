@@ -41,7 +41,7 @@ export function TrustSection() {
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
             Miért válassz minket?
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground leading-tight text-balance">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground leading-tight text-balance">
             Mert a bizalom mindennél fontosabb
           </h2>
           <p className="mt-6 text-base sm:text-lg text-muted-foreground text-pretty">
@@ -59,7 +59,7 @@ export function TrustSection() {
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                 <point.icon className="w-7 h-7 text-primary" aria-hidden />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">{point.title}</h3>
+              <h3 className="font-display text-xl font-semibold text-foreground mb-3">{point.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{point.description}</p>
             </div>
           ))}

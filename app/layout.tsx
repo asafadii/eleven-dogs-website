@@ -17,12 +17,14 @@ const fredoka = Fredoka({
   subsets: ['latin'],
   variable: '--font-fredoka',
   display: 'swap',
+  weight: ['500', '600', '700'],
 })
 
 const nunito = Nunito({
   subsets: ['latin'],
   variable: '--font-nunito',
   display: 'swap',
+  weight: ['600', '700'],
 })
 
 const defaultTitle = `${SITE_NAME} | Kutyasétáltatás a 11. kerületben`

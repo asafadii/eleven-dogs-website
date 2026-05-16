@@ -22,20 +22,17 @@ export function Navigation() {
         <div className="flex items-center justify-between gap-3 min-h-20 h-20">
           <Link
             href="/"
-            className="flex items-center gap-2 sm:gap-3 group min-w-0 shrink"
+            className="flex items-center group min-w-0 shrink"
             aria-label="Eleven Dogs kezdőlap"
           >
             <Image
               src="/images/eleven-dogs-logo.png"
               alt=""
-              width={120}
-              height={40}
+              width={140}
+              height={48}
               className="h-9 sm:h-10 w-auto shrink-0"
               priority
             />
-            <span className="text-lg sm:text-xl font-semibold tracking-tight text-foreground truncate hidden sm:inline">
-              Eleven Dogs
-            </span>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
@@ -43,7 +40,7 @@ export function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
+                className="font-sans text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -79,7 +76,7 @@ export function Navigation() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium text-foreground hover:text-primary transition-colors py-3 min-h-11 flex items-center"
+                  className="font-sans text-lg font-medium text-foreground hover:text-primary transition-colors py-3 min-h-11 flex items-center"
                 >
                   {link.label}
                 </Link>
