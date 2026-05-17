@@ -79,7 +79,7 @@ export default function PricingPage() {
               <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                 Árak
               </p>
-              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
+              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
                 Átlátható, fair árazás
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
@@ -96,7 +96,7 @@ export default function PricingPage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
                 Fő szolgáltatásunk
               </div>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-foreground">
                 Kutyasétáltatás
               </h2>
             </div>
@@ -118,7 +118,7 @@ export default function PricingPage() {
                     </div>
                   )}
                   <div className="mb-6">
-                    <h3 className={`font-display text-xl font-semibold mb-2 ${item.popular ? 'text-background' : 'text-foreground'}`}>
+                    <h3 className={`font-heading text-xl font-medium mb-2 ${item.popular ? 'text-background' : 'text-foreground'}`}>
                       {item.duration}
                     </h3>
                     <p className={`text-sm ${item.popular ? 'text-background/70' : 'text-muted-foreground'}`}>
@@ -160,7 +160,7 @@ export default function PricingPage() {
 
             {/* Walking packages */}
             <div className="bg-secondary/50 rounded-3xl p-8 md:p-12 max-w-4xl">
-              <h3 className="font-display text-2xl font-semibold text-foreground mb-8">
+              <h3 className="font-heading text-2xl font-medium text-foreground mb-8">
                 Bérletek rendszeres sétáltatáshoz
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
@@ -187,7 +187,7 @@ export default function PricingPage() {
         <section className="py-24 lg:py-32 bg-secondary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="mb-16">
-              <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-4">
+              <h2 className="font-heading text-3xl md:text-4xl font-medium tracking-tight text-foreground mb-4">
                 További szolgáltatások
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -199,7 +199,7 @@ export default function PricingPage() {
               {otherServices.map((service, index) => (
                 <div key={index} className="bg-card rounded-2xl p-8 border border-border">
                   <div className="mb-6">
-                    <h3 className="font-display text-xl font-semibold text-foreground mb-1">
+                    <h3 className="font-heading text-xl font-medium text-foreground mb-1">
                       {service.name}
                     </h3>
                     <p className="text-sm text-muted-foreground">
@@ -230,7 +230,7 @@ export default function PricingPage() {
         <section className="py-24 lg:py-32 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-2xl mx-auto text-center">
-              <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-medium tracking-tight text-foreground mb-6">
                 Kérdésed van az árakról?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">

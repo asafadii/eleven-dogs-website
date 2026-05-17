@@ -11,7 +11,7 @@ export function CTASection() {
           <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-accent/20 blur-3xl" aria-hidden />
 
           <div className="relative px-6 py-14 sm:px-10 sm:py-16 md:px-16 md:py-24 text-center">
-            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-background leading-tight text-balance max-w-3xl mx-auto mb-5 sm:mb-6">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-background leading-tight text-balance max-w-3xl mx-auto mb-5 sm:mb-6">
               Készen állsz arra, hogy megismerjük a kutyádat?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-background/80 max-w-xl mx-auto mb-8 sm:mb-10 text-pretty">

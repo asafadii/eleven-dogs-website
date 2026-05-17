@@ -40,7 +40,7 @@ export default function ContactPage() {
               <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
                 Kapcsolat
               </p>
-              <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
+              <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1] text-balance mb-6">
                 Beszéljünk a kutyádról
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
@@ -55,7 +55,7 @@ export default function ContactPage() {
             <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
               {/* Contact Form */}
               <div>
-                <h2 className="font-display text-2xl font-semibold text-foreground mb-8">
+                <h2 className="font-heading text-2xl font-medium text-foreground mb-8">
                   Küldj üzenetet
                 </h2>
                 
@@ -64,7 +64,7 @@ export default function ContactPage() {
                     <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-6">
                       <Mail className="w-8 h-8 text-primary" aria-hidden />
                     </div>
-                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                    <h3 className="font-heading text-xl font-medium text-foreground mb-2">
                       Köszönjük az üzeneted!
                     </h3>
                     <p className="text-muted-foreground">
@@ -165,7 +165,7 @@ export default function ContactPage() {
                       <Calendar className="w-6 h-6 text-primary" aria-hidden />
                     </div>
                     <div>
-                      <h3 className="font-display text-xl font-semibold text-foreground">
+                      <h3 className="font-heading text-xl font-medium text-foreground">
                         Online foglalás
                       </h3>
                       <p className="text-sm text-muted-foreground">Hamarosan elérhető</p>
@@ -179,7 +179,7 @@ export default function ContactPage() {
 
                 {/* Contact details */}
                 <div className="space-y-6">
-                  <h3 className="font-display text-xl font-semibold text-foreground">
+                  <h3 className="font-heading text-xl font-medium text-foreground">
                     Elérhetőségeink
                   </h3>
                   
@@ -219,7 +219,7 @@ export default function ContactPage() {
 
                 {/* Social */}
                 <div className="space-y-4">
-                  <h3 className="font-display text-xl font-semibold text-foreground">
+                  <h3 className="font-heading text-xl font-medium text-foreground">
                     Kövess minket
                   </h3>
                   <div className="flex gap-4">

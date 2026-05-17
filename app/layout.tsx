@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Fredoka, Manrope, Nunito } from 'next/font/google'
+import { Manrope, Nunito } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 
 import { LocalBusinessJsonLd } from '@/components/structured-data'
@@ -8,23 +8,16 @@ import { getMetadataBase, getSiteUrl, SITE_DESCRIPTION, SITE_NAME } from '@/lib/
 import './globals.css'
 
 const manrope = Manrope({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-manrope',
   display: 'swap',
 })
 
-const fredoka = Fredoka({
-  subsets: ['latin'],
-  variable: '--font-fredoka',
-  display: 'swap',
-  weight: ['500', '600', '700'],
-})
-
 const nunito = Nunito({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-nunito',
   display: 'swap',
-  weight: ['600', '700'],
+  weight: ['500', '600', '700'],
 })
 
 const defaultTitle = `${SITE_NAME} | Kutyasétáltatás a 11. kerületben`
@@ -100,7 +93,7 @@ export default function RootLayout({
   return (
     <html lang="hu" className="bg-background overflow-x-clip">
       <body
-        className={`${manrope.variable} ${fredoka.variable} ${nunito.variable} font-sans antialiased min-w-0 overflow-x-clip`}
+        className={`${manrope.variable} ${nunito.variable} font-sans antialiased min-w-0 overflow-x-clip`}
       >
         <a
           href="#main-content"

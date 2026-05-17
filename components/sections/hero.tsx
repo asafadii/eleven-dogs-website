@@ -23,7 +23,7 @@ export function HeroSection() {
               Budapest, 11. kerület
             </div>
 
-            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1] text-balance mb-5 sm:mb-6">
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1] text-balance mb-5 sm:mb-6">
               Kutyasétáltatás a 11. kerületben
             </h1>
 

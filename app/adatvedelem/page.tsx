@@ -17,7 +17,7 @@ export default function PrivacyPage() {
         <section className="py-24 lg:py-32 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-12 min-w-0">
             <div className="max-w-3xl mx-auto">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-8">
+              <h1 className="font-heading text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-8">
                 Adatvédelmi tájékoztató
               </h1>
               
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
                   Ez a tájékoztató ismerteti, hogyan gyűjtjük, használjuk és védjük az adataidat.
                 </p>
 
-                <h2 className="font-display text-2xl font-semibold text-foreground mt-12 mb-4">
+                <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
                   1. Adatkezelő
                 </h2>
                 <p>
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
                   Email: hello@elevendogs.hu
                 </p>
 
-                <h2 className="font-display text-2xl font-semibold text-foreground mt-12 mb-4">
+                <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
                   2. Gyűjtött adatok
                 </h2>
                 <p>
@@ -44,21 +44,21 @@ export default function PrivacyPage() {
                   kutya neve és az üzenet tartalma.
                 </p>
 
-                <h2 className="font-display text-2xl font-semibold text-foreground mt-12 mb-4">
+                <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
                   3. Adatkezelés célja
                 </h2>
                 <p>
                   Az adatokat kizárólag a szolgáltatásaink nyújtásához és a kapcsolattartáshoz használjuk.
                 </p>
 
-                <h2 className="font-display text-2xl font-semibold text-foreground mt-12 mb-4">
+                <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
                   4. Adatmegőrzés
                 </h2>
                 <p>
                   Az adatokat a kapcsolat fennállásáig, de legfeljebb 3 évig őrizzük meg.
                 </p>
 
-                <h2 className="font-display text-2xl font-semibold text-foreground mt-12 mb-4">
+                <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
                   5. Jogaid
                 </h2>
                 <p>
