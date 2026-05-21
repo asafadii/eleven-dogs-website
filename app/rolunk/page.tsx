@@ -16,12 +16,14 @@ const teamMembers = [
     name: "Eliza",
     role: "Alapító & Kutyasétáltató",
     image: "/images/eliza.jpg",
+    imageClassName: "object-cover object-[72%_center]",
     description: "A kutyák iránti szenvedélyem már gyerekkorom óta tart. Buddy, a mentett terrierem volt az, aki végleg elkötelezetté tett ezen a pályán. Minden nap hálás vagyok, hogy ezt csinálhatom."
   },
   {
     name: "Alicja",
     role: "Alapító & Kutyasétáltató",
-    image: "/images/team-alicja.jpg",
+    image: "/images/alicja.jpg",
+    imageClassName: "object-cover",
     description: "Pixie-vel az oldalamon tanultam meg, mit jelent valóban megérteni egy kutyát. Hiszek abban, hogy minden kutya egyedi, és így is kell kezelni őket."
   }
 ]
@@ -31,12 +33,14 @@ const dogs = [
     name: "Buddy",
     role: "Hivatalos inspiráció",
     image: "/images/buddy.jpg",
+    imageClassName: "object-cover object-[center_28%]",
     description: "Buddy egy energia-bomba terrier, aki minden nap megmutatja, milyen az igazi életöröm. Ő volt az ihlet az Eleven Dogs mögött."
   },
   {
     name: "Pixie",
     role: "Napközis társaság",
     image: "/images/pixie.jpg",
+    imageClassName: "object-cover",
     description: "Pixie a nyugalom szigete a csapatban. Kedves természete miatt tökéletes társaság a napközis kutyáknak."
   }
 ]
@@ -71,7 +75,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden relative bg-muted">
                   <Image
-                    src="/images/about-story.jpg"
+                    src="/images/rolunk-top.jpg"
                     alt="Az Eleven Dogs alapítói kutyasétáltatás közben"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -135,7 +139,7 @@ export default function AboutPage() {
                       alt={`${member.name}, ${member.role} – Eleven Dogs`}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
+                      className={member.imageClassName}
                     />
                   </div>
                   <div className="p-8">
@@ -161,7 +165,7 @@ export default function AboutPage() {
                       alt={`${dog.name}, ${dog.role} – Eleven Dogs csapat`}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
+                      className={dog.imageClassName}
                     />
                   </div>
                   <div className="p-8">

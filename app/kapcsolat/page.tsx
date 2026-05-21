@@ -103,7 +103,7 @@ export default function ContactPage() {
                       <Label htmlFor="dogName">Kutyád neve</Label>
                       <Input 
                         id="dogName"
-                        placeholder="Morzsi"
+                        placeholder="Buddy"
                         value={formData.dogName}
                         onChange={(e) => setFormData({...formData, dogName: e.target.value})}
                         className="h-12 rounded-xl"

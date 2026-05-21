@@ -17,7 +17,7 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border/50">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-12" aria-label="Fő navigáció">
         <div className="flex items-center justify-between gap-3 min-h-20 h-20">
           <Link
@@ -28,9 +28,9 @@ export function Navigation() {
             <Image
               src="/images/eleven-dogs-logo.png"
               alt=""
-              width={140}
-              height={48}
-              className="h-9 sm:h-10 w-auto shrink-0"
+              width={180}
+              height={64}
+              className="h-14 sm:h-16 w-auto shrink-0"
               priority
             />
           </Link>
@@ -68,7 +68,7 @@ export function Navigation() {
         {isOpen ? (
           <div
             id="mobile-navigation"
-            className="md:hidden absolute top-20 left-0 right-0 bg-background border-b border-border shadow-lg"
+            className="md:hidden absolute top-20 left-0 right-0 bg-white border-b border-border shadow-lg"
           >
             <div className="flex flex-col px-4 pb-6 pt-2 gap-1">
               {navLinks.map((link) => (

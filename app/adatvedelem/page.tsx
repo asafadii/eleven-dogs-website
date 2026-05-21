@@ -20,55 +20,102 @@ export default function PrivacyPage() {
               <h1 className="font-heading text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-8">
                 Adatvédelmi tájékoztató
               </h1>
-              
-              <div className="prose prose-lg text-muted-foreground">
-                <p className="lead text-foreground">
-                  Az Eleven Dogs elkötelezett a személyes adatok védelme mellett. 
-                  Ez a tájékoztató ismerteti, hogyan gyűjtjük, használjuk és védjük az adataidat.
+
+              <div className="prose prose-lg text-muted-foreground max-w-none">
+                <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
+                  1. Az adatkezelő adatai
+                </h2>
+                <p>
+                  Név: Safadi Abdulsalam M W N E.V.
+                  <br />
+                  Székhely: 1095 Budapest, Lechner Ödön fasor 2. 1/6
+                  <br />
+                  E-mail: hello@elevendogs.hu
+                  <br />
+                  Weboldal: elevendogs.hu
                 </p>
 
                 <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
-                  1. Adatkezelő
+                  2. Milyen adatokat kezelünk?
                 </h2>
                 <p>
-                  Eleven Dogs<br />
-                  Székhely: Budapest, 11. kerület<br />
-                  Email: hello@elevendogs.hu
+                  A weboldalon található kapcsolatfelvételi űrlapon keresztül az alábbi adatokat
+                  kérhetjük el:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>név</li>
+                  <li>e-mail cím</li>
+                  <li>telefonszám</li>
+                  <li>üzenet tartalma</li>
+                </ul>
+                <p>Az adatokat kizárólag kapcsolatfelvétel és kommunikáció céljából használjuk fel.</p>
+
+                <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
+                  3. Az adatkezelés célja
+                </h2>
+                <p>Az általad megadott adatokat az alábbi célokra használjuk:</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>kapcsolatfelvétel</li>
+                  <li>időpont egyeztetés</li>
+                  <li>szolgáltatásainkkal kapcsolatos kommunikáció</li>
+                  <li>ügyfélkapcsolat fenntartása</li>
+                </ul>
+                <p>
+                  Az adatokat nem használjuk marketing célokra, és nem küldünk hírlevelet.
                 </p>
 
                 <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
-                  2. Gyűjtött adatok
+                  4. Az adatok tárolása
                 </h2>
                 <p>
-                  A kapcsolatfelvételi űrlapon megadott adatokat gyűjtjük: név, email cím, 
-                  kutya neve és az üzenet tartalma.
+                  Az adatokat csak a szükséges ideig őrizzük meg, és nem adjuk tovább harmadik félnek,
+                  kivéve ha azt jogszabály írja elő.
+                </p>
+                <p>A kapcsolatfelvétel során történő kommunikáció történhet:</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>e-mailben</li>
+                  <li>telefonon</li>
+                  <li>Messengerben</li>
+                  <li>vagy más, az ügyfél által preferált platformon.</li>
+                </ul>
+
+                <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
+                  5. Adatbiztonság
+                </h2>
+                <p>
+                  Mindent megteszünk annak érdekében, hogy az általad megadott adatokat biztonságosan
+                  kezeljük és megvédjük az illetéktelen hozzáféréstől.
                 </p>
 
                 <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
-                  3. Adatkezelés célja
+                  6. Az érintettek jogai
                 </h2>
+                <p>Jogod van:</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>tájékoztatást kérni az általunk kezelt adatokról</li>
+                  <li>kérni azok módosítását vagy törlését</li>
+                  <li>tiltakozni az adatkezelés ellen</li>
+                </ul>
+                <p>Kérés esetén az adatokat indokolatlan késedelem nélkül töröljük.</p>
                 <p>
-                  Az adatokat kizárólag a szolgáltatásaink nyújtásához és a kapcsolattartáshoz használjuk.
+                  Kapcsolat:{" "}
+                  <a href="mailto:hello@elevendogs.hu" className="text-foreground hover:underline">
+                    hello@elevendogs.hu
+                  </a>
                 </p>
 
                 <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
-                  4. Adatmegőrzés
+                  7. Sütik (cookie-k)
                 </h2>
+                <p>A weboldal technikai működéséhez alapvető sütiket használhat.</p>
                 <p>
-                  Az adatokat a kapcsolat fennállásáig, de legfeljebb 3 évig őrizzük meg.
+                  A weboldal jelenleg nem használ profilalkotó vagy marketing célú cookie-kat.
                 </p>
 
                 <h2 className="font-heading text-2xl font-medium text-foreground mt-12 mb-4">
-                  5. Jogaid
+                  8. Tájékoztató módosítása
                 </h2>
-                <p>
-                  Jogod van hozzáférni az adataidhoz, kérni azok módosítását vagy törlését. 
-                  Kérdés esetén írj nekünk: hello@elevendogs.hu
-                </p>
-
-                <p className="mt-12 text-sm">
-                  Utolsó frissítés: 2024. január
-                </p>
+                <p>Fenntartjuk a jogot jelen adatvédelmi tájékoztató módosítására.</p>
               </div>
             </div>
           </div>

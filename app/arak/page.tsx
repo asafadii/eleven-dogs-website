@@ -23,7 +23,7 @@ const walkingPrices = [
     duration: "60 perc",
     price: "5.000",
     description: "Teljes séta élmény",
-    features: ["Hosszú séta", "Játék a parkban", "Fotók és videó", "Részletes visszajelzés"],
+    features: ["Hosszú séta", "Fotók és videó", "Részletes visszajelzés"],
     popular: true
   }
 ]
@@ -53,14 +53,14 @@ const otherServices = [
   },
   {
     name: "Ottalvás",
-    price: "8.500",
+    price: "8.000",
     unit: "éj",
     description: "Hozott táppal",
     features: ["Esti és reggeli séta", "Otthonos környezet", "Folyamatos felügyelet", "Reggeli frissítés"]
   },
   {
     name: "Ottalvás",
-    price: "9.000",
+    price: "9.500",
     unit: "éj",
     description: "Etetéssel együtt",
     features: ["Esti és reggeli séta", "Minőségi táp", "Otthonos környezet", "Folyamatos felügyelet"]

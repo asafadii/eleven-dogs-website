@@ -1,20 +1,25 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Instagram, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-secondary/50 border-t border-border" role="contentinfo">
+    <footer className="bg-white border-t border-border" role="contentinfo">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-14 sm:py-16 min-w-0">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12">
           <div className="md:col-span-2 min-w-0">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0" aria-hidden>
-                <span className="text-lg font-bold text-primary-foreground">11</span>
-              </div>
-              <span className="text-xl font-semibold tracking-tight">Eleven Dogs</span>
-            </div>
+            <Link href="/" className="inline-flex mb-4" aria-label="Eleven Dogs kezdőlap">
+              <Image
+                src="/images/eleven-dogs-logo.png"
+                alt=""
+                width={160}
+                height={56}
+                className="h-12 sm:h-14 w-auto"
+              />
+            </Link>
             <p className="text-muted-foreground max-w-sm leading-relaxed">
               Megbízható kutyasétáltatás a 11. kerületben.
+              <br />
               Mert a kutyád megérdemli a legjobbat.
             </p>
             <div className="flex gap-3 mt-6">
