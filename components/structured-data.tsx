@@ -17,8 +17,7 @@ export function LocalBusinessJsonLd() {
     serviceType: ['Kutyasétáltatás', 'Kutyagondozás', 'Napközi', 'Ottalvás'],
     inLanguage: 'hu-HU',
     sameAs: [
-      'https://instagram.com/elevendogs',
-      'https://facebook.com/elevendogs',
+      'https://www.facebook.com/profile.php?id=61572358276485',
     ],
   }
 

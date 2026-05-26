@@ -17,17 +17,49 @@ export default function ContactPage() {
     email: "",
     dogName: "",
     message: "",
-    gdprConsent: false
+    gdprConsent: false,
+    company: ""
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (isSubmitting) return
+
+    setErrorMessage(null)
     setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    setSubmitted(true)
-    setIsSubmitting(false)
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      if (!res.ok) {
+        const data = (await res.json().catch(() => null)) as
+          | { error?: string; errors?: Record<string, string> }
+          | null
+        const firstFieldError = data?.errors ? Object.values(data.errors)[0] : undefined
+        throw new Error(firstFieldError || data?.error || "Nem sikerült elküldeni az üzenetet. Kérjük, próbáld újra.")
+      }
+
+      setSubmitted(true)
+      setFormData({
+        name: "",
+        email: "",
+        dogName: "",
+        message: "",
+        gdprConsent: false,
+        company: "",
+      })
+    } catch (err) {
+      setErrorMessage(err instanceof Error ? err.message : "Nem sikerült elküldeni az üzenetet. Kérjük, próbáld újra.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -73,6 +105,17 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="sr-only" aria-hidden="true">
+                      <Label htmlFor="company">Cég</Label>
+                      <Input
+                        id="company"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={formData.company}
+                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                      />
+                    </div>
+
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="name">Neved</Label>
@@ -122,6 +165,12 @@ export default function ContactPage() {
                         className="rounded-xl resize-none"
                       />
                     </div>
+
+                    {errorMessage ? (
+                      <div className="rounded-2xl border border-destructive/30 bg-destructive/10 p-4 text-sm text-foreground">
+                        {errorMessage}
+                      </div>
+                    ) : null}
 
                     <div className="flex items-start gap-3">
                       <Checkbox 
@@ -223,17 +272,17 @@ export default function ContactPage() {
                     Kövess minket
                   </h3>
                   <div className="flex gap-4">
-                    <a 
-                      href="https://instagram.com/elevendogs" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-5 py-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
+                    <div
+                      className="flex items-center gap-3 px-5 py-3 rounded-full bg-card border border-border opacity-60 cursor-not-allowed"
+                      role="status"
+                      aria-label="Instagram hamarosan elérhető"
+                      title="Instagram hamarosan elérhető"
                     >
                       <Instagram className="w-5 h-5 text-primary" aria-hidden />
                       <span className="font-medium text-foreground">Instagram</span>
-                    </a>
+                    </div>
                     <a 
-                      href="https://facebook.com/elevendogs" 
+                      href="https://www.facebook.com/profile.php?id=61572358276485" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 px-5 py-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"

@@ -26,17 +26,17 @@ export function Footer() {
               Mert a kutyád megérdemli a legjobbat.
             </p>
             <div className="flex gap-3 mt-6">
-              <a
-                href="https://instagram.com/elevendogs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="Eleven Dogs Instagram oldala"
+              <button
+                type="button"
+                className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full bg-muted text-muted-foreground opacity-60 cursor-not-allowed"
+                aria-label="Instagram hamarosan elérhető"
+                title="Instagram hamarosan elérhető"
+                disabled
               >
                 <Instagram className="w-5 h-5" aria-hidden />
-              </a>
+              </button>
               <a
-                href="https://facebook.com/elevendogs"
+                href="https://www.facebook.com/profile.php?id=61572358276485"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
