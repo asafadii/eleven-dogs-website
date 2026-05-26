@@ -16,12 +16,12 @@ const teamMembers = [
     name: "Eliza",
     role: "Alapító & Kutyasétáltató",
     image: "/images/eliza.jpg",
-    imageClassName: "object-cover object-[72%_center]",
+    imageClassName: "object-cover object-[center_22%]",
     description: "A kutyák iránti szenvedélyem már gyerekkorom óta tart. Buddy, a mentett terrierem volt az, aki végleg elkötelezetté tett ezen a pályán. Minden nap hálás vagyok, hogy ezt csinálhatom."
   },
   {
     name: "Alicja",
-    role: "Alapító & Kutyasétáltató",
+    role: "Alapító & Napközis",
     image: "/images/alicja.jpg",
     imageClassName: "object-cover",
     description: "Pixie-vel az oldalamon tanultam meg, mit jelent valóban megérteni egy kutyát. Hiszek abban, hogy minden kutya egyedi, és így is kell kezelni őket."
@@ -33,14 +33,14 @@ const dogs = [
     name: "Buddy",
     role: "Hivatalos inspiráció",
     image: "/images/buddy.jpg",
-    imageClassName: "object-cover object-[center_28%]",
+    imageClassName: "object-cover object-[58%_20%]",
     description: "Buddy egy energia-bomba terrier, aki minden nap megmutatja, milyen az igazi életöröm. Ő volt az ihlet az Eleven Dogs mögött."
   },
   {
     name: "Pixie",
     role: "Napközis társaság",
     image: "/images/pixie.jpg",
-    imageClassName: "object-cover",
+    imageClassName: "object-cover object-[center_35%]",
     description: "Pixie a nyugalom szigete a csapatban. Kedves természete miatt tökéletes társaság a napközis kutyáknak."
   }
 ]

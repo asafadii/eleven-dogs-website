@@ -108,7 +108,7 @@ export function ServicesSection() {
                 alt="Kutya napközi, gondozás és társaság"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-[center_24%]"
               />
             </div>
             <h3 className="font-heading text-xl font-medium text-foreground mb-3">Napközi</h3>

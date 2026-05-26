@@ -10,10 +10,13 @@ export function Footer() {
           <div className="md:col-span-2 min-w-0">
             <Link href="/" className="inline-flex mb-4" aria-label="Eleven Dogs kezdőlap">
               <Image
-                src="/images/eleven-dogs-logo.png"
+                src="/images/eleven-dogs-logo-final.png"
                 alt=""
-                width={160}
-                height={56}
+                width={4750}
+                height={1188}
+                quality={100}
+                unoptimized={false}
+                sizes="(max-width: 640px) 192px, 224px"
                 className="h-12 sm:h-14 w-auto"
               />
             </Link>
