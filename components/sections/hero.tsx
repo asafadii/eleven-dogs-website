@@ -54,7 +54,7 @@ export function HeroSection() {
             </div>
 
             <div
-              className="flex flex-wrap items-center gap-y-4 mt-10 sm:mt-12 pt-8 border-t border-border"
+              className="grid grid-cols-3 gap-x-2 sm:flex sm:flex-wrap sm:items-center sm:gap-x-0 sm:gap-y-4 mt-10 sm:mt-12 pt-8 border-t border-border"
               aria-label="Rövid statisztikák"
             >
               {trustStats.map((stat, index) => (
@@ -65,7 +65,7 @@ export function HeroSection() {
                       aria-hidden
                     />
                   ) : null}
-                  <div>
+                  <div className="min-w-0 text-center sm:text-left">
                     <p className="text-2xl font-semibold text-foreground">{stat.value}</p>
                     <p className="text-sm text-muted-foreground">{stat.label}</p>
                   </div>

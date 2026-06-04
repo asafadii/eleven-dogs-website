@@ -172,15 +172,18 @@ export default function ContactPage() {
                       </div>
                     ) : null}
 
-                    <div className="flex items-start gap-3">
+                    <div className="flex items-start gap-3 min-w-0">
                       <Checkbox 
                         id="gdpr"
                         checked={formData.gdprConsent}
                         onCheckedChange={(checked) => setFormData({...formData, gdprConsent: checked as boolean})}
                         required
-                        className="mt-1"
+                        className="mt-1 shrink-0"
                       />
-                      <Label htmlFor="gdpr" className="text-sm text-muted-foreground leading-relaxed">
+                      <Label
+                        htmlFor="gdpr"
+                        className="block min-w-0 flex-1 text-sm font-normal text-muted-foreground leading-relaxed"
+                      >
                         Elfogadom az{" "}
                         <Link href="/adatvedelem" className="text-primary hover:underline">
                           Adatvédelmi tájékoztatót

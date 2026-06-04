@@ -26,14 +26,12 @@ export function Navigation() {
             aria-label="Eleven Dogs kezdőlap"
           >
             <Image
-              src="/images/eleven-dogs-logo-final.png"
+              src="/images/Eleven Dogs Logo Final.svg"
               alt=""
-              width={4750}
-              height={1188}
-              quality={100}
-              unoptimized={false}
-              sizes="(max-width: 640px) 240px, 288px"
-              className="h-[60px] sm:h-[72px] w-auto shrink-0"
+              width={1500}
+              height={375}
+              unoptimized
+              className="h-[60px] sm:h-[72px] w-auto max-w-full shrink-0"
               priority
             />
           </Link>
